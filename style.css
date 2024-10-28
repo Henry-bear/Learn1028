@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    color: red;
+}
+
+.content-test {
+    text-shadow: 1px 1px black;
+    padding-bottom: 3px;
+}
+
+table {
+    border-collapse: separate;
+}
+
+th {
+    background-color: #f19465;
+    width: 25vw;
+    height: 200px;
+}
+
+td {
+    background-color: #4cbdc1;
+    width: 25vw;
+    height: 200px;
+    text-align: center;
+}
