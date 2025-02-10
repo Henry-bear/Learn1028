@@ -87,4 +87,4 @@ UPDATE member SET name = 'test2' WHERE username = 'test';
 <img width="716" alt="updatename" src="https://github.com/user-attachments/assets/aa09532d-d2d2-4c24-a65f-42f6da4a7aea" />
 
 # Task 4
-**SQL Aggregation Functions (聚合函數) **
+**SQL Aggregation Functions (聚合函數)**
