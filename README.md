@@ -42,7 +42,8 @@ INSERT INTO member (name, username, password, follower_count)
     -> ('Alex', 'alex3838', 'password', 100);
 ```
 <img width="550" alt="tesk3 1-1" src="https://github.com/user-attachments/assets/06e13ccf-d9a5-43b8-9dac-911921e0ce3c" />
-<img width="715" alt="task3 1" src="https://github.com/user-attachments/assets/3bb530b1-41ea-41cb-a5f8-fee48921a21e" />
+<img width="707" alt="task3 1" src="https://github.com/user-attachments/assets/018a0514-4553-44b6-847f-a162de4f5bf6" />
+
 
 * SELECT all rows from the member table.
 ```sql
