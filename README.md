@@ -1,8 +1,9 @@
 # Task 1
-** Install MySQL server **
+**Install MySQL server**
 <img width="350" alt="MySQL" src="https://github.com/user-attachments/assets/bc159e7d-41fd-4366-9da6-4f37a64b9844" />
 
 # Task 2
+**Create database and table in your MySQL server**
 **建立 website 資料庫**  
 ```sql
 CREATE DATABASE website;
