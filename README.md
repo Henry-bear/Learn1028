@@ -19,3 +19,18 @@ CREATE TABLE member (
     -> time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
     -> );
 ```
+
+# Task 3
+**SQL 建立、刪除、查詢、更新**
+*INSERT a new row to the member table where name, username and password must
+be set to test. INSERT additional 4 rows with arbitrary data.
+```sql
+INSERT INTO member (name, username, password)
+    -> VALUES ('test', 'test', 'test');
+INSERT INTO member (name, username, password, follower_count)
+    -> VALUES
+    -> ('Henry', 'henry1107', '123456', 999),
+    -> ('Cundi', 'cundi520', '654321', 888),
+    -> ('Tom', 'tom8787', '87654321', 666),
+    -> ('Alex', 'alex3838', 'password', 100);
+```
