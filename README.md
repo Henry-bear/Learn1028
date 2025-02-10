@@ -106,8 +106,9 @@ SELECT SUM(follower_count) AS total_followers FROM member;
 
 * SELECT the average of follower＿count of all the rows from the member table.
 ```sql
-
+SELECT AVG(followers_count) AS average_followers FROM member;
 ```
+<img width="716" alt="avgfollowers" src="https://github.com/user-attachments/assets/7c4ee710-b14f-4791-a8f7-d5ea4ac0dea0" />
 
 * SELECT the average of follower＿count of the first 2 rows, in descending order of follower_count, from the member table.
 ```sql
