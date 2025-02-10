@@ -92,3 +92,23 @@ UPDATE member SET name = 'test2' WHERE username = 'test';
 
 # Task 4
 **SQL Aggregation Functions (聚合函數)**
+* SELECT how many rows from the member table.
+```sql
+SELECT COUNT(*) AS total_rows FROM member;
+```
+<img width="694" alt="countRows" src="https://github.com/user-attachments/assets/1d649964-a461-4d60-93f7-cd13b70d1e73" />
+
+* SELECT the sum of follower＿count of all the rows from the member table.
+```sql
+
+```
+
+* SELECT the average of follower＿count of all the rows from the member table.
+```sql
+
+```
+
+* SELECT the average of follower＿count of the first 2 rows, in descending order of follower_count, from the member table.
+```sql
+
+```
