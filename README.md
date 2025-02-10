@@ -8,7 +8,7 @@ SELECT * FROM users WHERE created_at > '2025-01-01';
 ```sql
 CREATE DATABASE website;
 ```
-**建立 member Table**  
+**建立 member 資料表**  
 ```sql
 CREATE TABLE member (
     -> id BIGINT AUTO_INCREMENT PRIMARY KEY,
