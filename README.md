@@ -40,7 +40,9 @@ INSERT INTO member (name, username, password, follower_count)
 SELECT * FROM member;
 ```
 * SELECT all rows from the member table, in descending order of time.
-  
+```sql
+SELECT * FROM member ORDER BY time DESC;
+```  
 * SELECT total 3 rows, second to fourth, from the member table, in descending order
 of time. Note: it does not mean SELECT rows where id are 2, 3, or 4.
 
