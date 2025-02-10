@@ -45,11 +45,22 @@ SELECT * FROM member ORDER BY time DESC;
 ```  
 * SELECT total 3 rows, second to fourth, from the member table, in descending order
 of time. Note: it does not mean SELECT rows where id are 2, 3, or 4.
-
+```sql
+SELECT * FROM member ORDER BY time LIMIT 3 OFFSET 1;
+```
 * SELECT rows where username equals to test.
-  
+```sql
+SELECT * FROM member WHERE username = 'test';
+```
 * SELECT rows where name includes the es keyword.
-  
+```sql
+SELECT * FROM member WHERE name LIKE '%es%';
+```
 * SELECT rows where both username and password equal to test.
-  
+```sql
+SELECT * FROM member WHERE username = 'test' AND password = 'test';
+``` 
 * UPDATE data in name column to test2 where username equals to test.
+```sql
+UPDATE member SET name = 'test2' WHERE username = 'test';
+```
