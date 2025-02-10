@@ -9,6 +9,7 @@ SELECT * FROM users WHERE created_at > '2025-01-01';
 CREATE DATABASE website;
 ```
 <img width="643" alt="creat-database" src="https://github.com/user-attachments/assets/a957efe5-ff0f-48e7-ae08-b2168e6f501e" />
+
 **建立 member 資料表**  
 ```sql
 CREATE TABLE member (
