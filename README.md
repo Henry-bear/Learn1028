@@ -112,5 +112,12 @@ SELECT AVG(followers_count) AS average_followers FROM member;
 
 * SELECT the average of follower＿count of the first 2 rows, in descending order of follower_count, from the member table.
 ```sql
-
+SELECT AVG(followers_count) AS average_top2_followers
+FROM (
+SELECT follower_count
+FROM member
+ORDER BY follower_count DESC
+LIMIT 2
+) AS top2;
 ```
+<img width="608" alt="avgfollowerslimit" src="https://github.com/user-attachments/assets/560efd5b-8f13-4670-b010-6d7502a0d6ed" />
