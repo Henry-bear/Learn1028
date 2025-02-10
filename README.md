@@ -100,8 +100,9 @@ SELECT COUNT(*) AS total_rows FROM member;
 
 * SELECT the sum of follower＿count of all the rows from the member table.
 ```sql
-
+SELECT SUM(follower_count) AS total_followers FROM member;
 ```
+<img width="715" alt="sumfollower" src="https://github.com/user-attachments/assets/161e2898-940a-4e55-bb1f-16506e7ab2a5" />
 
 * SELECT the average of follower＿count of all the rows from the member table.
 ```sql
