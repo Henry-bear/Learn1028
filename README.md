@@ -22,7 +22,8 @@ CREATE TABLE member (
     -> );
 ```
 <img width="502" alt="creat-table-member" src="https://github.com/user-attachments/assets/9d29ba54-cfb3-4e97-9676-edd57e821a6c" />
-** member 資料表**
+
+** 資料表資訊 **
 <img width="714" alt="describe-member" src="https://github.com/user-attachments/assets/2a7db469-90a0-4f7f-946f-fd7e03b072b1" />
 
 # Task 3
