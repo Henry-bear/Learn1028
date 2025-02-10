@@ -5,11 +5,11 @@ SELECT * FROM users WHERE created_at > '2025-01-01';
 
 # Task 2
 **建立 website 資料庫**  
-```
+```sql
 CREATE DATABASE website;
 ```
 **建立 member Table**  
-```
+```sql
 CREATE TABLE member (
     -> id BIGINT AUTO_INCREMENT PRIMARY KEY,
     -> name VARCHAR(255) NOT NULL,
