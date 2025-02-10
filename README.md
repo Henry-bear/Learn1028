@@ -35,3 +35,7 @@ INSERT INTO member (name, username, password, follower_count)
     -> ('Tom', 'tom8787', '87654321', 666),
     -> ('Alex', 'alex3838', 'password', 100);
 ```
+*SELECT all rows from the member table.
+```sql
+SELECT * FROM member;
+```
