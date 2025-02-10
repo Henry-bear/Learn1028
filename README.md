@@ -1,5 +1,5 @@
 # Task 1
-<img width="655" alt="MySQL" src="https://github.com/user-attachments/assets/bc159e7d-41fd-4366-9da6-4f37a64b9844" />
+<img width="350" alt="MySQL" src="https://github.com/user-attachments/assets/bc159e7d-41fd-4366-9da6-4f37a64b9844" />
 
 # Task 2
 **建立 website 資料庫**  
