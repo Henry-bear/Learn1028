@@ -25,7 +25,7 @@ CREATE TABLE member (
 <img width="714" alt="describe-member" src="https://github.com/user-attachments/assets/2a7db469-90a0-4f7f-946f-fd7e03b072b1" />
 
 # Task 3
-**SQL 建立、刪除、查詢、更新**
+**SQL CRUD （建立、刪除、查詢、更新）**
 
 * INSERT a new row to the member table where name, username and password must
 be set to test. INSERT additional 4 rows with arbitrary data.
@@ -86,3 +86,5 @@ UPDATE member SET name = 'test2' WHERE username = 'test';
 ```
 <img width="716" alt="updatename" src="https://github.com/user-attachments/assets/aa09532d-d2d2-4c24-a65f-42f6da4a7aea" />
 
+# Task 4
+**SQL Aggregation Functions (聚合函數) **
