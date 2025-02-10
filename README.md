@@ -1,7 +1,5 @@
 # Task 1
-```
-SELECT * FROM users WHERE created_at > '2025-01-01';
-```
+<img width="655" alt="MySQL" src="https://github.com/user-attachments/assets/bc159e7d-41fd-4366-9da6-4f37a64b9844" />
 
 # Task 2
 **建立 website 資料庫**  
