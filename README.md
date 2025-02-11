@@ -137,6 +137,19 @@ FOREIGN KEY (member_id) REFERENCES member(id)
 ```
 <img width="718" alt="messagetable" src="https://github.com/user-attachments/assets/b6fa5c49-bb8e-4e03-9f85-1abb0a2b6377" />
 
+* INSERT Sample data
+```sql
+INSERT INTO message (member_id, content, like_count)
+VALUES
+((SELECT id FROM member WHERE username = 'henry1107'), 'Hello from Henry!', 10),
+((SELECT id FROM member WHERE username = 'cundi520'), 'Hello from Cundi!', 20),
+((SELECT id FROM member WHERE username = 'tom8787'), 'Hello from Tom!', 30),
+((SELECT id FROM member WHERE username = 'alex3838'), 'Hello from Alex!', 5),
+((SELECT id FROM member WHERE username = 'test'), 'Hello from Test!', 15);
+```
+<img width="725" alt="insertsampledata" src="https://github.com/user-attachments/assets/8b418361-cce1-41ea-8027-b95e674b61bd" />
+
+
 * SELECT all messages, including sender names. We have to JOIN the member table to get that.
 ```sql
 
