@@ -39,8 +39,10 @@ ___
 * INSERT a new row to the member table where name, username and password must
 be set to test. INSERT additional 4 rows with arbitrary data.
 ```sql
+-- 插入一筆數據到 member 資料表，其中 name、username 和 password 都設置為 'test'
 INSERT INTO member (name, username, password)
     -> VALUES ('test', 'test', 'test');
+-- 插入另外四筆數據到 member 資料表，其中包含任意的資料
 INSERT INTO member (name, username, password, follower_count)
     -> VALUES
     -> ('Henry', 'henry1107', '123456', 999),
@@ -54,12 +56,14 @@ INSERT INTO member (name, username, password, follower_count)
 
 * SELECT all rows from the member table.
 ```sql
+-- 查詢 member 資料表中的所有資料
 SELECT * FROM member;
 ```
 <img width="715" alt="member" src="https://github.com/user-attachments/assets/57888cf9-4707-48ea-ba68-87bf68034aca" />
 
 * SELECT all rows from the member table, in descending order of time.
 ```sql
+-- 按照 time 欄位的降序排序，查詢 member 資料表中的所有資料
 SELECT * FROM member ORDER BY time DESC;
 ```
 <img width="715" alt="timeDESC" src="https://github.com/user-attachments/assets/eeca2996-71b8-4d3c-bd40-d5f5c9b2f1d6" />
@@ -67,30 +71,35 @@ SELECT * FROM member ORDER BY time DESC;
 * SELECT total 3 rows, second to fourth, from the member table, in descending order
 of time. Note: it does not mean SELECT rows where id are 2, 3, or 4.
 ```sql
+-- 按照 time 欄位的降序排序，查詢 member 資料表中的 第 2 到 第 4 行 資料
 SELECT * FROM member ORDER BY time LIMIT 3 OFFSET 1;
 ```
 <img width="711" alt="Limit" src="https://github.com/user-attachments/assets/869909ba-1db1-4a03-a001-0ed557db42f6" />
 
 * SELECT rows where username equals to test.
 ```sql
+-- 查詢 member 資料表中 username 等於 'test' 的所有資料
 SELECT * FROM member WHERE username = 'test';
 ```
 <img width="721" alt="user-test" src="https://github.com/user-attachments/assets/9e1bfb43-ab38-4db7-b14f-c01c0a4200a0" />
 
 * SELECT rows where name includes the es keyword.
 ```sql
+-- 查詢 member 資料表中 name 包含 'es' 關鍵字的所有資料
 SELECT * FROM member WHERE name LIKE '%es%';
 ```
 <img width="719" alt="name-es" src="https://github.com/user-attachments/assets/de2f3f4c-3ccb-41df-b857-f967b70f5b7a" />
 
 * SELECT rows where both username and password equal to test.
 ```sql
+-- 查詢 member 資料表中 username 和 password 都等於 'test' 的所有資料
 SELECT * FROM member WHERE username = 'test' AND password = 'test';
 ```
 <img width="714" alt="usernameANDpassword" src="https://github.com/user-attachments/assets/0fcc874f-78cf-4327-a290-0583e06255da" />
 
 * UPDATE data in name column to test2 where username equals to test.
 ```sql
+-- 更新 member 資料表中 username 等於 'test' 的 name 欄位為 'test2'
 UPDATE member SET name = 'test2' WHERE username = 'test';
 ```
 <img width="716" alt="updatename" src="https://github.com/user-attachments/assets/aa09532d-d2d2-4c24-a65f-42f6da4a7aea" />
@@ -101,12 +110,14 @@ ___
 **SQL Aggregation Functions (聚合函數)**
 * SELECT how many rows from the member table.
 ```sql
+-- 查詢 member 資料表中的總行數
 SELECT COUNT(*) AS total_rows FROM member;
 ```
 <img width="694" alt="countRows" src="https://github.com/user-attachments/assets/1d649964-a461-4d60-93f7-cd13b70d1e73" />
 
 * SELECT the sum of follower＿count of all the rows from the member table.
 ```sql
+-- 查詢 member 資料表中 follower_count 欄位的總和
 SELECT SUM(follower_count) AS total_followers FROM member;
 ```
 <img width="715" alt="sumfollower" src="https://github.com/user-attachments/assets/161e2898-940a-4e55-bb1f-16506e7ab2a5" />
