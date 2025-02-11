@@ -147,7 +147,7 @@ VALUES
 ((SELECT id FROM member WHERE username = 'alex3838'), 'Hello from Alex!', 5),
 ((SELECT id FROM member WHERE username = 'test'), 'Hello from Test!', 15);
 ```
-<img width="725" alt="insertsampledata" src="https://github.com/user-attachments/assets/8b418361-cce1-41ea-8027-b95e674b61bd" />
+<img width="718" alt="insertsampledata" src="https://github.com/user-attachments/assets/cf301b09-dbb9-4809-b83a-5a9ca6dfbfd6" />
 
 
 * SELECT all messages, including sender names. We have to JOIN the member table to get that.
