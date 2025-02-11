@@ -40,10 +40,10 @@ ___
 * INSERT a new row to the member table where name, username and password must
 be set to test. INSERT additional 4 rows with arbitrary data.
 ```sql
--- 插入一筆數據到 member 資料表，其中 name、username 和 password 都設置為 'test'
+-- 插入一筆資料到 member 資料表，其中 name、username 和 password 都設置為 'test'
 INSERT INTO member (name, username, password)
     -> VALUES ('test', 'test', 'test');
--- 插入另外四筆數據到 member 資料表，其中包含任意的資料
+-- 插入另外四筆資料到 member 資料表，其中包含任意的資料
 INSERT INTO member (name, username, password, follower_count)
     -> VALUES
     -> ('Henry', 'henry1107', '123456', 999),
@@ -164,6 +164,7 @@ FOREIGN KEY (member_id) REFERENCES member(id)
 
 * INSERT Sample data
 ```sql
+-- 插入 範例資料 到 message 資料表，member_id 由子查詢獲取對應的 member 資料表中的 id
 INSERT INTO message (member_id, content, like_count)
 VALUES
 ((SELECT id FROM member WHERE username = 'henry1107'), 'Hello from Henry!', 10),
@@ -177,6 +178,7 @@ VALUES
 
 * SELECT all messages, including sender names. We have to JOIN the member table to get that.
 ```sql
+-- 查詢所有訊息，包括發送者的名字，使用 JOIN 將 message 資料表與 member 資料表進行連接
 SELECT message.*, member.name AS sender_name
 FROM message
 JOIN member ON message.member_id = member.id;
@@ -186,6 +188,7 @@ JOIN member ON message.member_id = member.id;
 
 * SELECT all messages, including sender names, where sender username equals to test. We have to JOIN the member table to filter and get that.
 ```sql
+-- 查詢所有訊息，包括發送者的名字，並選擇發送者的 username 等於 'test' 的資料，使用 JOIN 將 message 資料表與 member 資料表進行連接
 SELECT message.*, member.name AS sender_name
 FROM message
 JOIN member ON message.member_id = member.id
@@ -196,6 +199,7 @@ WHERE member.username = 'test';
 
 * Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like count of messages where sender username equals to test.
 ```sql
+-- 查詢發送者 username 等於 'test' 的資料的 平均 like_count，使用 JOIN 將 message 資料表與 member 資料表進行連接
 SELECT AVG(message.like_count) AS average_like_count
 FROM message
 JOIN member ON message.member_id = member.id
@@ -205,6 +209,7 @@ WHERE member.username = 'test';
 
 * Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like count of messages GROUP BY sender username.
 ```sql
+-- 查詢資料的平均 like_count，按照發送者 username 分群，使用 JOIN 將 message 資料表與 member 資料表進行連接
 SELECT member.username, AVG(message.like_count) AS average_like_count
 FROM message
 JOIN member ON message.member_id = member.id
