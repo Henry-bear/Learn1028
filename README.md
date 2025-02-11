@@ -161,13 +161,22 @@ JOIN member ON message.member_id = member.id;
 
 * SELECT all messages, including sender names, where sender username equals to test. We have to JOIN the member table to filter and get that.
 ```sql
-
+SELECT message.*, member.name AS sender_name
+FROM message
+JOIN member ON message.member_id = member.id
+WHERE member.username = 'test';
 ```
+<img width="721" alt="joinwhere" src="https://github.com/user-attachments/assets/7e7e8ac2-a4a7-4383-82d2-e18542272dd9" />
+
 
 * Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like count of messages where sender username equals to test.
 ```sql
-
+SELECT AVG(message.like_count) AS average_like_count
+FROM message
+JOIN member ON message.member_id = member.id
+WHERE member.username = 'test';
 ```
+<img width="715" alt="avgjoin" src="https://github.com/user-attachments/assets/098358c3-51d6-45eb-bc7f-69f492ba2780" />
 
 * Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like count of messages GROUP BY sender username.
 ```sql
