@@ -152,7 +152,9 @@ VALUES
 
 * SELECT all messages, including sender names. We have to JOIN the member table to get that.
 ```sql
-
+SELECT message.*, member.name AS sender_name
+FROM message
+JOIN member ON message.member_id = member.id;
 ```
 
 * SELECT all messages, including sender names, where sender username equals to test. We have to JOIN the member table to filter and get that.
