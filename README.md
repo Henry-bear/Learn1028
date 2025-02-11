@@ -121,3 +121,18 @@ LIMIT 2
 ) AS top2;
 ```
 <img width="608" alt="avgfollowerslimit" src="https://github.com/user-attachments/assets/560efd5b-8f13-4670-b010-6d7502a0d6ed" />
+
+# Task 5
+**SQL JOIN(合併查詢）**
+* Create a new table named message, in the website database. designed as below:
+```sql
+CREATE TABLE message(
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+member_id BIGINT NOT NULL,
+content VARCHAR(255) NOT NULL,
+like_count INT UNSIGNED NOT NULL DEFAULT 0,
+time DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+FOREIGN KEY (member_id) REFERENCES member(id)
+);
+```
+<img width="718" alt="messagetable" src="https://github.com/user-attachments/assets/b6fa5c49-bb8e-4e03-9f85-1abb0a2b6377" />
