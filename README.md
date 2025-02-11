@@ -10,6 +10,7 @@ ___
 
 **建立 website 資料庫**  
 ```sql
+-- 建立 website 資料庫
 CREATE DATABASE website;
 ```
 <img width="643" alt="creat-database" src="https://github.com/user-attachments/assets/a957efe5-ff0f-48e7-ae08-b2168e6f501e" />
@@ -124,12 +125,14 @@ SELECT SUM(follower_count) AS total_followers FROM member;
 
 * SELECT the average of follower＿count of all the rows from the member table.
 ```sql
+-- 查詢 member 資料表中 follower_count 欄位的平均值
 SELECT AVG(followers_count) AS average_followers FROM member;
 ```
 <img width="716" alt="avgfollowers" src="https://github.com/user-attachments/assets/7c4ee710-b14f-4791-a8f7-d5ea4ac0dea0" />
 
 * SELECT the average of follower＿count of the first 2 rows, in descending order of follower_count, from the member table.
 ```sql
+-- 查詢 member 資料表中 follower_count 欄位的前兩行數據的平均值（按 follower_count 欄位降序排列）
 SELECT AVG(followers_count) AS average_top2_followers
 FROM (
 SELECT follower_count
@@ -146,6 +149,8 @@ ___
 **SQL JOIN(合併查詢）**
 * Create a new table named message, in the website database. designed as below:
 ```sql
+-- 創建 message 資料表，包含欄位：id、member_id、content、like_count 和 time，
+-- 並設置 member_id 為 FOREIGN KEY (外鍵)，引用 member 資料表的 id 欄位
 CREATE TABLE message(
 id BIGINT AUTO_INCREMENT PRIMARY KEY,
 member_id BIGINT NOT NULL,
