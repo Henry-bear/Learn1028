@@ -29,7 +29,9 @@ CREATE TABLE member (
 
 * member 資料表資訊 
 <img width="714" alt="describe-member" src="https://github.com/user-attachments/assets/2a7db469-90a0-4f7f-946f-fd7e03b072b1" />
+
 ___
+
 # Task 3
 **SQL CRUD （建立、刪除、查詢、更新）**
 
@@ -91,7 +93,9 @@ SELECT * FROM member WHERE username = 'test' AND password = 'test';
 UPDATE member SET name = 'test2' WHERE username = 'test';
 ```
 <img width="716" alt="updatename" src="https://github.com/user-attachments/assets/aa09532d-d2d2-4c24-a65f-42f6da4a7aea" />
+
 ___
+
 # Task 4
 **SQL Aggregation Functions (聚合函數)**
 * SELECT how many rows from the member table.
@@ -123,7 +127,9 @@ LIMIT 2
 ) AS top2;
 ```
 <img width="608" alt="avgfollowerslimit" src="https://github.com/user-attachments/assets/560efd5b-8f13-4670-b010-6d7502a0d6ed" />
+
 ___
+
 # Task 5
 **SQL JOIN(合併查詢）**
 * Create a new table named message, in the website database. designed as below:
