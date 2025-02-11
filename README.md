@@ -2,6 +2,7 @@
 **Install MySQL server**
 
 <img width="350" alt="MySQL" src="https://github.com/user-attachments/assets/bc159e7d-41fd-4366-9da6-4f37a64b9844" />
+
 ___
 
 # Task 2
