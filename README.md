@@ -136,3 +136,23 @@ FOREIGN KEY (member_id) REFERENCES member(id)
 );
 ```
 <img width="718" alt="messagetable" src="https://github.com/user-attachments/assets/b6fa5c49-bb8e-4e03-9f85-1abb0a2b6377" />
+
+* SELECT all messages, including sender names. We have to JOIN the member table to get that.
+```sql
+
+```
+
+* SELECT all messages, including sender names, where sender username equals to test. We have to JOIN the member table to filter and get that.
+```sql
+
+```
+
+* Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like count of messages where sender username equals to test.
+```sql
+
+```
+
+* Use SELECT, SQL Aggregation Functions with JOIN statement, get the average like count of messages GROUP BY sender username.
+```sql
+
+```
