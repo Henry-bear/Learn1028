@@ -16,6 +16,7 @@ CREATE DATABASE website;
 
 **建立 member 資料表**  
 ```sql
+-- 建立 member 資料表，包含欄位：id、name、username、password、follower_count 和 time
 CREATE TABLE member (
     -> id BIGINT AUTO_INCREMENT PRIMARY KEY,
     -> name VARCHAR(255) NOT NULL,
