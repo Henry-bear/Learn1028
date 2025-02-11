@@ -156,6 +156,8 @@ SELECT message.*, member.name AS sender_name
 FROM message
 JOIN member ON message.member_id = member.id;
 ```
+<img width="720" alt="join" src="https://github.com/user-attachments/assets/b356b619-4bf6-4e64-be81-9566cd8fe64a" />
+
 
 * SELECT all messages, including sender names, where sender username equals to test. We have to JOIN the member table to filter and get that.
 ```sql
